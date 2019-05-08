@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      .center {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 50px;
+        display: inline-block;
+      }
+
+      #contact {
+        font-size: 30px;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #262626;
+        padding: 15px 25px;
+        border-left: 4px solid #262626;
+        border-right: 4px solid #84061a;
+      }
+      .bdr {
+        display: block;
+        height: 3px;
+        position: absolute;
+      }
+
+      .bdr1 {
+        top: -10px;
+        left: 0px;
+        width: 15%;
+        transition: 0.3s;
+        background: #262626 !important;
+      }
+
+      .bdr2 {
+        top: -10px;
+        right: 0px;
+        width: 80%;
+        transition: 0.3s;
+        background: #84061a;
+      }
+
+      .bdr3 {
+        bottom: -10px;
+        left: 0px;
+        width: 80%;
+        transition: 0.3s;
+        background: #262626 !important;
+      }
+
+      .bdr4 {
+        bottom: -10px;
+        right: 0px;
+        width: 15%;
+        transition: 0.3s;
+        background: #84061a;
+      }
+
+      .center:hover .bdr1 {
+        width: 80%;
+      }
+      .center:hover .bdr2 {
+        width: 15%;
+      }
+      .center:hover .bdr3 {
+        width: 15%;
+      }
+      .center:hover .bdr4 {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <div class="center">
+    <a id="contact" href="mailto:tim@timkeeley.com">Contact Us</a>
+    <div class="bdr bdr1"></div>
+    <div class="bdr bdr2"></div>
+    <div class="bdr bdr3"></div>
+    <div class="bdr bdr4"></div>
+  </div>
+</html>
